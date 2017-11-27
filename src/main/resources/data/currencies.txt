@@ -1,0 +1,21 @@
+{
+    getUrl: function(val) {
+        if (val) {
+            return AJS.contextPath() + '/rest/currencies/1.0/find';
+        } else {
+            return null;
+        }
+    },
+    getParams: function(ctl, val){
+        var params = {
+            'max-results': 10
+        };
+        if (val) {
+            params.filter = Confluence.unescapeEntities(val);
+        }
+        return params;
+    },
+    update: function(ctl, link){
+        require('com.mesilat/autocomplete:currencies').updateCurrency(ctl, link);
+    }
+}

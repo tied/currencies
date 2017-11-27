@@ -1,0 +1,24 @@
+{namespace Mesilat.Currencies.Templates}
+
+/**
+* Currency Template
+* @param code
+* @param name
+*/
+{template .currency}
+<span class="com-mesilat-currency-name" com-mesilat-currency-code="{$code}">
+<!-- img src="{contextPath()}/rest/currencies/1.0/image/{$code}" title="{$name}"></img>&nbsp; -->{$name}
+</span>
+{/template}
+
+
+/**
+* Currency Symbol Template
+* @param code
+* @param symbol
+*/
+{template .currencySymbol}
+<span class="com-mesilat-currency-symbol" com-mesilat-currency-code="{$code}">
+<!-- img src="{contextPath()}/rest/currencies/1.0/image/{$code}" title="{$symbol}"></img>&nbsp; -->{$symbol}
+</span>
+{/template}
