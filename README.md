@@ -1,4 +1,6 @@
 # Currencies
 Currency Addon for Confluence features two macros: currency and currency-symbol
 
-For details please refer to addon homepage: https://mesilat.com/wiki/display/VAP/Currency+Addon+for+Confluence
+Please check the product homepage: https://mesilat.com/FAP/Currencies
+
+Download from Atlassian Marketplace: https://marketplace.atlassian.com/plugins/com.mesilat.currencies
